@@ -170,7 +170,7 @@ ch2_x<-subset (ch2_x,ACC>0)
 ch2_g<-ggplot(ch2_x,aes(x=as.factor(ART),y=ACC))
 ch2_g+geom_bar (aes (fill=ART),stat = "identity", show.legend = FALSE)+facet_wrap(Year~.,ncol=2,dir="v")+
   theme(axis.text.x = element_text(angle=90, hjust=1))+
-  labs(title = "Обліковані кримінальні провадження провадження",
+  labs(title = "Обліковані кримінальні провадження",
        subtitle= paste("Розділ ", chx," Особливої частини КК"),
        x="Стаття КК", y = "кількість")+
   scale_y_continuous(labels = point)    
